@@ -5,18 +5,21 @@ spring:
     url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: admin
+    
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
 server:
   port: 8081
+  
 shiro-redis:
   enabled: true
   redis-manager:
     host: 127.0.0.1:6379
+    
 markerhub:
   jwt:
-    # ¼ÓÃÜÃØÔ¿
+    # åŠ å¯†ç§˜é’¥
     secret: f4e2e52034348f86b67cde581c0f9eb5
-    # tokenÓĞĞ§Ê±³¤£¬7Ìì£¬µ¥Î»Ãë
+    # tokenæœ‰æ•ˆæ—¶é•¿ï¼Œ7å¤©ï¼Œå•ä½ç§’
     expire: 604800
     header: Authorization
